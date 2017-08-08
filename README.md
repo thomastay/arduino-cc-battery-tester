@@ -22,9 +22,13 @@ Here's how to calculate the capacity of the battery: Take the time in hours that
 ## LED indicator
 
 1 blink every 5 seconds --> No battery connected
+
 2 blinks every second, for 3 seconds, followed by 2 second delay --> Battery undercharged
+
 3 blinks every second, for 3 seconds, followed by 2 second delay --> Battery overcharged
+
 1 blink every second --> Battery finished discharging
+
 LED fully on --> Battery under load. 
 
 ## Credits:
