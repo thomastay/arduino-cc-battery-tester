@@ -8,18 +8,18 @@ The circuit diagram can be seen in "BJT CC.sch". Basically, the op-amp and the M
 
 The important part of the circuit is that it is controlled by an Arduino. The Arduino senses the battery voltage and switches off the transistor once it reaches a set cutoff point as an over-discharge protection. This is crucial since we are dealing with unprotected 18650 batteries. 
 
-#Important variables
+# Important variables
 
 The most important variable is "const float currentSet", which sets the current in Amps. Set it to 1.0 to test your battery under 1A. 
 
-#Usage
+# Usage
 Set the variable currentSet and upload the code to your arduino. Then, connect the wires to your Arduino as shown in the schematic. You can monitor your Arduino from the serial monitor, or you can use a program like PLX-DAQ, which logs the serial monitor data to an Excel file.
 
 When the battery is under load, the LED will turn on. After the battery is discharged, the battery cuts off and the LED will blink once a second, indicating that the discharge is done.
 
 Here's how to calculate the capacity of the battery: Take the time in hours that the battery works under load, and multiply it by 1000 to get the capacity in mAh. This is the capacity of your battery under a 1A load.
 
-##LED indicator
+## LED indicator
 
 1 blink every 5 seconds --> No battery connected
 2 blinks every second, for 3 seconds, followed by 2 second delay --> Battery undercharged
