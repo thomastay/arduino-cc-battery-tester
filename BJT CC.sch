@@ -12603,6 +12603,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="-30.48" y="38.1" size="1.778" layer="91">Arduino Pin 8</text>
 <text x="-30.48" y="60.96" size="1.778" layer="91">Arduino PWM Pin 9</text>
 <text x="-30.48" y="22.86" size="1.778" layer="91">Arduino 5V</text>
+<text x="-30.48" y="71.12" size="1.778" layer="91">Arduino pin A0</text>
 </plain>
 <instances>
 <instance part="U1" gate="G1" x="45.72" y="45.72"/>
@@ -12635,7 +12636,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="BAT_IN" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="C"/>
-<wire x1="68.58" y1="55.88" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="55.88" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="53.34" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<junction x="68.58" y="53.34"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="71.12" x2="-20.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">

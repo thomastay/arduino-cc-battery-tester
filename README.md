@@ -4,7 +4,7 @@ Constant current circuit to test 18650 batteries.
 ## Introduction
 18650 batteries need to be tested under load to know their capacity. It is possible to plot a discharge curve of the battery, but a constant current load gives you more useful data as you will be using the 18650 battery to draw a certain amount of current in your circuit anyway. 
 
-The circuit diagram can be seen in "BJT CC.sch". Basically, the op-amp and the MOSFET act as a constant-current load, keeping the current at 1 amp through the 1ohm power resistor. 
+The circuit diagram can be seen in "BJT CC.sch". Basically, the op-amp and the transistor (a TIP120 is used here, but any power Darlington would work too) act as a constant-current load, keeping the current at 1 amp through the 1ohm power resistor. 
 
 The important part of the circuit is that it is controlled by an Arduino. The Arduino senses the battery voltage and switches off the transistor once it reaches a set cutoff point as an over-discharge protection. This is crucial since we are dealing with unprotected 18650 batteries. 
 
