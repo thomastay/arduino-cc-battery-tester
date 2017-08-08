@@ -8,7 +8,7 @@ const float noBatt = 0.8;
 const float lowBatt = 2.6;
 const float highBatt = 4.3;
 const float battCutoff = 3.0;
-const float currentSet = 0.2;
+const float currentSet = 1.0;
 const float resistance = 1.05;      //Resistance of 1.0+10% ohm resistor, measured with my multimeter
 
 //Program variables - DO NOT TOUCH
